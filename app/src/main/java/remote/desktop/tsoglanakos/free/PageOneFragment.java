@@ -147,6 +147,7 @@ public class PageOneFragment extends Fragment {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String msg = parent.getItemAtPosition(position).toString();
                 msg = msg.replace("%", "").replace(" ", "");
+                if(MouseUIActivity.ps!=null)
                 MouseUIActivity.ps.println(msg);
             }
 

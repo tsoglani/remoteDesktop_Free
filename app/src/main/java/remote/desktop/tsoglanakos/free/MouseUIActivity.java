@@ -21,6 +21,7 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.DataInputStream;
 import java.io.IOException;
@@ -167,13 +168,16 @@ public class MouseUIActivity extends ActionBarActivity implements SensorEventLis
 
     }
 
+   private static boolean isViewVisible=true;
     @Override
     protected void onResume() {
         super.onResume();
+        isViewVisible=true;
         // register this class as a listener for the orientation and
         // accelerometer sensors
 
     }
+
 
     public void rightClickFunction(View v) {
         ps.println("RIGHT_CLICK");
@@ -198,6 +202,7 @@ public class MouseUIActivity extends ActionBarActivity implements SensorEventLis
     protected void onStop() {
         super.onStop();
         closeAll();
+        isViewVisible=false;
     }
 
 
@@ -370,9 +375,32 @@ public class MouseUIActivity extends ActionBarActivity implements SensorEventLis
                                         });
                                     }
                                 } catch (Exception e) {
+//                                    isReceivingImages = true;
+//                                    FrameLayout ll = new FrameLayout(getApplicationContext());
+//                                    FrameLayout fragContainer = (FrameLayout) findViewById(remote.desktop.tsoglanakos.free.R.id.app);
+//                                    fragContainer.removeAllViews();
+//                                    ll.setId(12345);
+//                                    getFragmentManager().beginTransaction().add(ll.getId(), new PageOneFragment(), "Mousepad").commit();
+//                                    fragContainer.addView(ll);
+//                                    startReceivingImages(MouseUIActivity, true);
+e.printStackTrace();
+//                                    try {
+//                                        finalize();
+//                                    } catch (Throwable throwable) {
+//                                        throwable.printStackTrace();
+//                                    }
+                                    runOnUiThread(new Thread(){
+                                        @Override
+                                        public void run() {
+                                            if(curTabString!=null&&curTabString.equals("Spy Camera")){
+                                                Toast.makeText(MouseUIActivity.this, "Computer device (hardware or OS) not support remote spy camera.", Toast.LENGTH_SHORT).show();
 
-
+                                            }else
+                                            Toast.makeText(MouseUIActivity.this, "Something went wrong.", Toast.LENGTH_SHORT).show();
+                                        }
+                                    });
                                     throw new NullPointerException();
+
                                 }
                             } catch (ArrayIndexOutOfBoundsException e) {
                                 e.printStackTrace();
@@ -381,7 +409,11 @@ public class MouseUIActivity extends ActionBarActivity implements SensorEventLis
                             } catch (NullPointerException e) {
                                 e.printStackTrace();
                                 isReceivingImages = false;
-                                startActivity(new Intent(MouseUIActivity.this, MainActivity.class));
+                                Intent intent=new Intent(MouseUIActivity.this, MainActivity.class);
+                                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+                                startActivity(intent);
                             } catch (Exception e) {
                                 e.printStackTrace();
 
@@ -433,7 +465,8 @@ public class MouseUIActivity extends ActionBarActivity implements SensorEventLis
 
     private FrameLayout fl;
     private static boolean isReceivingImages = true;
-
+     ProgressDialog ringProgressDialog;
+    private String curTabString;
     @Override
     public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {
         FrameLayout fragContainer = (FrameLayout) findViewById(remote.desktop.tsoglanakos.free.R.id.app);
@@ -441,6 +474,7 @@ public class MouseUIActivity extends ActionBarActivity implements SensorEventLis
         if (sensorManager != null) {
             sensorManager.unregisterListener(this);
         }
+        curTabString =tab.getText().toString();
         if (tab.getText().toString().equalsIgnoreCase("MousePad")) {
             try {
                 isReceivingImages = true;
@@ -473,32 +507,52 @@ public class MouseUIActivity extends ActionBarActivity implements SensorEventLis
             getFragmentManager().beginTransaction().add(ll.getId(), new WebCameraFragment(), "Spy Camera").commit();
             fragContainer.addView(ll);
 
-            final ProgressDialog ringProgressDialog = ProgressDialog.show(MouseUIActivity.this, "Please wait ...", "Be sure that the computer has Camera ...", true);
-            ringProgressDialog.setCancelable(true);
-            ps.println("START_CAMERA");
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    try {
-                        Thread.sleep(650);
 
-                        runOnUiThread(new Thread() {
-                            @Override
-                            public void run() {
-                                isReceivingImages = true;
-                                startReceivingImages(MouseUIActivity.this, false);
-                            }
-                        });
-                        // Here you should write your time consuming task...
-                        // Let the progress ring for 10 seconds...
-                        Thread.sleep(3000);
+try {
+     ringProgressDialog = ProgressDialog.show(MouseUIActivity.this, "Please wait ...", "Be sure that the computer has Camera ...", true);
+    ringProgressDialog.setCancelable(true);
+    ps.println("START_CAMERA");
 
-                    } catch (Exception e) {
+    new Thread(new Runnable() {
+        @Override
+        public void run() {
+            try {
+                Thread.sleep(650);
 
+                runOnUiThread(new Thread() {
+                    @Override
+                    public void run() {
+                        isReceivingImages = true;
+                        startReceivingImages(MouseUIActivity.this, false);
                     }
+                });
+                // Here you should write your time consuming task...
+                // Let the progress ring for 10 seconds...
+                Thread.sleep(3000);
+                if(ringProgressDialog!=null&&isViewVisible)
                     ringProgressDialog.dismiss();
-                }
-            }).start();
+            } catch (Exception e) {
+e.printStackTrace();
+            }
+
+        }
+    }).start();
+}catch (Exception|Error e){
+    e.printStackTrace();
+//    runOnUiThread(new Thread(){
+//        @Override
+//        public void run() {
+//            Toast.makeText(MouseUIActivity.this, "Your computer device (OS or hardware) not support remote camera.", Toast.LENGTH_SHORT).show();
+//        }
+//    });
+//    isReceivingImages = true;
+//
+//    getFragmentManager().beginTransaction().add(ll.getId(), new PageOneFragment(), "Mousepad").commit();
+//    fragContainer.addView(ll);
+//    startReceivingImages(this, true);
+//    tab.setText("MousePad");
+    return;
+}
 
         } else {
             isReceivingImages = false;
