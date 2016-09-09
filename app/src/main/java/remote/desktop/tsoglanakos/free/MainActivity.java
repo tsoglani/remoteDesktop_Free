@@ -1,4 +1,4 @@
-package com.nikos.tsoglani.androidmouse;
+package remote.desktop.tsoglanakos.free;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -7,10 +7,8 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.text.Html;
-import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.method.LinkMovementMethod;
-import android.text.util.Linkify;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -35,10 +33,10 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.nikos.tsoglani.androidmouse.R.layout.activity_main);
+        setContentView(remote.desktop.tsoglanakos.free.R.layout.activity_main);
         getWindow().setBackgroundDrawable(null);
 
-        final ExpandableMenuOverlay menuOverlay = (ExpandableMenuOverlay) findViewById(R.id.button_menu);
+        final ExpandableMenuOverlay menuOverlay = (ExpandableMenuOverlay) findViewById(remote.desktop.tsoglanakos.free.R.id.button_menu);
         menuOverlay.setOnMenuButtonClickListener(new ExpandableButtonMenu.OnMenuButtonClick() {
             @Override
             public void onClick(ExpandableButtonMenu.MenuButton action) {
@@ -66,7 +64,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(com.nikos.tsoglani.androidmouse.R.menu.menu_main, menu);
+        getMenuInflater().inflate(remote.desktop.tsoglanakos.free.R.menu.menu_main, menu);
 
 
         return true;

@@ -1,9 +1,7 @@
-package com.nikos.tsoglani.androidmouse;
+package remote.desktop.tsoglanakos.free;
 
-import android.app.Activity;
 import android.app.Service;
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Looper;

@@ -1,4 +1,4 @@
-package com.nikos.tsoglani.androidmouse;
+package remote.desktop.tsoglanakos.free;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -11,7 +11,6 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
@@ -47,7 +46,7 @@ public class MouseUIActivity extends ActionBarActivity implements SensorEventLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.nikos.tsoglani.androidmouse.R.layout.activity_mouse);
+        setContentView(remote.desktop.tsoglanakos.free.R.layout.activity_mouse);
         bar = getSupportActionBar();
         String type = getIntent().getStringExtra("Type");
         stopService(new Intent(this, InternetConnection.class));
@@ -103,7 +102,7 @@ public class MouseUIActivity extends ActionBarActivity implements SensorEventLis
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(com.nikos.tsoglani.androidmouse.R.menu.menu_mouse, menu);
+        getMenuInflater().inflate(remote.desktop.tsoglanakos.free.R.menu.menu_mouse, menu);
         return true;
     }
 
@@ -134,9 +133,9 @@ public class MouseUIActivity extends ActionBarActivity implements SensorEventLis
             };
             receiveThread.start();
             int X = 0, Y = 1, Z = 2;
-            x_axis = (TextView) findViewById(com.nikos.tsoglani.androidmouse.R.id.x_axis);
-            y_axis = (TextView) findViewById(com.nikos.tsoglani.androidmouse.R.id.y_axis);
-            z_axis = (TextView) findViewById(com.nikos.tsoglani.androidmouse.R.id.z_axis);
+            x_axis = (TextView) findViewById(remote.desktop.tsoglanakos.free.R.id.x_axis);
+            y_axis = (TextView) findViewById(remote.desktop.tsoglanakos.free.R.id.y_axis);
+            z_axis = (TextView) findViewById(remote.desktop.tsoglanakos.free.R.id.z_axis);
             //  float[] values = event.values;
             int[] val = new int[3];
             int maxPointTheory = 10;
@@ -341,7 +340,7 @@ public class MouseUIActivity extends ActionBarActivity implements SensorEventLis
                                         if (bitmapimage != null) {
                                             bitmapimage.prepareToDraw();
                                             // final Drawable draw = new BitmapDrawable(activity.getResources(), bitmapimage);
-                                            final ImageView iv = (ImageView) activity.findViewById(R.id.mousepad_screen);
+                                            final ImageView iv = (ImageView) activity.findViewById(remote.desktop.tsoglanakos.free.R.id.mousepad_screen);
                                             activity.runOnUiThread(new Thread() {
                                                 @Override
                                                 public void run() {
@@ -358,7 +357,7 @@ public class MouseUIActivity extends ActionBarActivity implements SensorEventLis
                                         }
                                     } else {
 
-                                        final ImageView iv = (ImageView) activity.findViewById(R.id.imageView);
+                                        final ImageView iv = (ImageView) activity.findViewById(remote.desktop.tsoglanakos.free.R.id.imageView);
 
                                         activity.runOnUiThread(new Thread() {
                                             @Override
@@ -437,7 +436,7 @@ public class MouseUIActivity extends ActionBarActivity implements SensorEventLis
 
     @Override
     public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {
-        FrameLayout fragContainer = (FrameLayout) findViewById(com.nikos.tsoglani.androidmouse.R.id.app);
+        FrameLayout fragContainer = (FrameLayout) findViewById(remote.desktop.tsoglanakos.free.R.id.app);
         fragContainer.removeAllViews();
         if (sensorManager != null) {
             sensorManager.unregisterListener(this);
@@ -518,7 +517,7 @@ public class MouseUIActivity extends ActionBarActivity implements SensorEventLis
         Button b = (Button) v;
 
         if (b.getText().toString().equalsIgnoreCase("send")) {
-            TextView txtView = (TextView) findViewById(R.id.textScreen);
+            TextView txtView = (TextView) findViewById(remote.desktop.tsoglanakos.free.R.id.textScreen);
 
             ps.println("keyboard Word:" + txtView.getText().toString());
             ps.flush();

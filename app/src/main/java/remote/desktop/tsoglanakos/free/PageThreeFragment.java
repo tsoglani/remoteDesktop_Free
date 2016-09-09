@@ -1,4 +1,4 @@
-package com.nikos.tsoglani.androidmouse;
+package remote.desktop.tsoglanakos.free;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.TextView;
 
 /**
  * Created by tsoglani on 17/7/2015.
@@ -16,13 +15,13 @@ public class PageThreeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
 
-        return inflater.inflate(com.nikos.tsoglani.androidmouse.R.layout.keyboard, container, false);
+        return inflater.inflate(remote.desktop.tsoglanakos.free.R.layout.keyboard, container, false);
     }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        EditText txt= (EditText) getActivity().findViewById(R.id.textScreen);
+        EditText txt= (EditText) getActivity().findViewById(remote.desktop.tsoglanakos.free.R.id.textScreen);
         txt.setOnKeyListener(new View.OnKeyListener() {
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent event) {

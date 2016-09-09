@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.nikos.tsoglani.androidmouse" >
+    package="remote.desktop.tsoglanakos.free" >
     <uses-permission android:name="android.permission.INTERNET" >
     </uses-permission>
 
@@ -14,7 +14,7 @@
 
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name="remote.desktop.tsoglanakos.free.MainActivity"
             android:screenOrientation="portrait"
             android:noHistory="true"
 
@@ -27,12 +27,12 @@
         </activity>
 
         <activity
-            android:name=".MouseUIActivity"
+            android:name="remote.desktop.tsoglanakos.free.MouseUIActivity"
             android:screenOrientation="portrait"
             android:noHistory="true"
             android:label="@string/title_activity_mouse" >
         </activity>
-    <service android:name=".InternetConnection"/>
+    <service android:name="remote.desktop.tsoglanakos.free.InternetConnection"/>
     </application>
 
 

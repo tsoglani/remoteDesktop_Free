@@ -1,4 +1,4 @@
-package com.nikos.tsoglani.androidmouse;
+package remote.desktop.tsoglanakos.free;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

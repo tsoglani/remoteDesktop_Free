@@ -1,4 +1,4 @@
 <menu xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.nikos.tsoglani.androidmouse.MouseUIActivity">
+    tools:context="remote.desktop.tsoglanakos.free.MouseUIActivity">
 
 </menu>

@@ -1,4 +1,4 @@
-package com.nikos.tsoglani.androidmouse;
+package remote.desktop.tsoglanakos.free;
 
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
@@ -7,7 +7,6 @@ import android.bluetooth.BluetoothSocket;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
-import android.widget.Button;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -41,9 +40,9 @@ public class MyBlueTooth extends AsyncTask<Void, Boolean, Boolean> {
 //        context.runOnUiThread(new Thread() {
 //            @Override
 //            public void run() {
-//                Button internet = (Button) context.findViewById(com.nikos.tsoglani.androidmouse.R.id.internetbuttonn);
+//                Button internet = (Button) context.findViewById(R.id.internetbuttonn);
 //                internet.setEnabled(false);
-//                Button bluetooth = (Button) context.findViewById(com.nikos.tsoglani.androidmouse.R.id.bluetoothbutton);
+//                Button bluetooth = (Button) context.findViewById(R.id.bluetoothbutton);
 //                bluetooth.setEnabled(false);
 //            }
 //        });
@@ -125,9 +124,9 @@ public class MyBlueTooth extends AsyncTask<Void, Boolean, Boolean> {
         context.runOnUiThread(new Thread() {
             @Override
             public void run() {
-//                Button internet = (Button) context.findViewById(com.nikos.tsoglani.androidmouse.R.id.internetbuttonn);
+//                Button internet = (Button) context.findViewById(R.id.internetbuttonn);
 //                internet.setEnabled(true);
-//                Button bluetooth = (Button) context.findViewById(com.nikos.tsoglani.androidmouse.R.id.bluetoothbutton);
+//                Button bluetooth = (Button) context.findViewById(R.id.bluetoothbutton);
 //                bluetooth.setEnabled(true);
             }
         });

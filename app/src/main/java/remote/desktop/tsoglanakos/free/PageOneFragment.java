@@ -1,4 +1,4 @@
-package com.nikos.tsoglani.androidmouse;
+package remote.desktop.tsoglanakos.free;
 
 import android.app.Fragment;
 import android.graphics.Point;
@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.Spinner;
 
@@ -88,13 +87,13 @@ public class PageOneFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
 
-        return inflater.inflate(com.nikos.tsoglani.androidmouse.R.layout.fragment_one, container, false);
+        return inflater.inflate(remote.desktop.tsoglanakos.free.R.layout.fragment_one, container, false);
     }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Button lc = (Button) getActivity().findViewById(R.id.lc);
+        Button lc = (Button) getActivity().findViewById(remote.desktop.tsoglanakos.free.R.id.lc);
         lc.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -110,8 +109,8 @@ public class PageOneFragment extends Fragment {
             }
         });
 
-        Button scrollUp = (Button) getActivity().findViewById(R.id.scroll_up);
-        Button scrollDown = (Button) getActivity().findViewById(R.id.scroll_down);
+        Button scrollUp = (Button) getActivity().findViewById(remote.desktop.tsoglanakos.free.R.id.scroll_up);
+        Button scrollDown = (Button) getActivity().findViewById(remote.desktop.tsoglanakos.free.R.id.scroll_down);
         scrollUp.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -130,14 +129,14 @@ public class PageOneFragment extends Fragment {
             }
         });
 
-        ImageView fl = (ImageView) getActivity().findViewById(R.id.mousepad_screen);
+        ImageView fl = (ImageView) getActivity().findViewById(remote.desktop.tsoglanakos.free.R.id.mousepad_screen);
         fl.setOnTouchListener(onTouchListener);
 
 
-        Spinner spinner = (Spinner) getActivity().findViewById(R.id.spinner);
+        Spinner spinner = (Spinner) getActivity().findViewById(remote.desktop.tsoglanakos.free.R.id.spinner);
 // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(),
-                R.array.zoome_values, android.R.layout.simple_spinner_item);
+                remote.desktop.tsoglanakos.free.R.array.zoome_values, android.R.layout.simple_spinner_item);
 // Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 // Apply the adapter to the spinnerg
