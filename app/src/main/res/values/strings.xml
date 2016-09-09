@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Remote Control</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_mouse">MouseActivity</string>
+
+
+    <string name="action_left">Bluetooth</string>
+    <string name="action_right">Internet</string>
+    <string name="action_center">WLAN</string>
+
+
+    <string name="zoom">ZOOM</string>
+    <string-array name="zoome_values">
+        <item>ZOOM: 00%</item>
+        <item>ZOOM: 10%</item>
+        <item>ZOOM: 20%</item>
+        <item>ZOOM: 30%</item>
+        <item>ZOOM: 40%</item>
+        <item>ZOOM: 50%</item>
+        <item>ZOOM: 60%</item>
+        <item>ZOOM: 70%</item>
+    </string-array>
+
+</resources>
