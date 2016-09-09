@@ -2,74 +2,74 @@
 <items version="2" >
 
     <item
-        jar="/media/tsoglani/Τοπικός δίσκος E/AndroidStudioProjects/AndroidMouse/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="/media/tsoglani/Τοπικός δίσκος E/AndroidStudioProjects/AndroidMouse/app/build/intermediates/pre-dexed/debug/classes-aaaead76492fb1c2ca7d473241265357cfb1c916.jar" />
-    </item>
-    <item
-        jar="/home/tsoglani/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
-        <dex dex="/media/tsoglani/Τοπικός δίσκος E/AndroidStudioProjects/AndroidMouse/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-b33ebaa9c9d88a1a3417e4737af1ef9fae7d0389.jar" />
-    </item>
-    <item
-        jar="/media/tsoglani/Τοπικός δίσκος E/AndroidStudioProjects/AndroidMouse/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="/media/tsoglani/Τοπικός δίσκος E/AndroidStudioProjects/AndroidMouse/app/build/intermediates/pre-dexed/debug/classes-aaaead76492fb1c2ca7d473241265357cfb1c916.jar" />
-    </item>
-    <item
-        jar="/media/tsoglani/Τοπικός δίσκος E/AndroidStudioProjects/AndroidMouse/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
-        <dex dex="/media/tsoglani/Τοπικός δίσκος E/AndroidStudioProjects/AndroidMouse/app/build/intermediates/pre-dexed/debug/classes-3ab51f1040418acd794ca060e0dec661cb5f2c66.jar" />
-    </item>
-    <item
-        jar="/home/tsoglani/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
-        <dex dex="/media/tsoglani/Τοπικός δίσκος E/AndroidStudioProjects/AndroidMouse/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-b33ebaa9c9d88a1a3417e4737af1ef9fae7d0389.jar" />
-    </item>
-    <item
-        jar="/media/tsoglani/Τοπικός δίσκος E/AndroidStudioProjects/AndroidMouse/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="/media/tsoglani/Τοπικός δίσκος E/AndroidStudioProjects/AndroidMouse/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-88093877c7de4bd2be8f3387b52160b57f587a35.jar" />
-    </item>
-    <item
-        jar="/media/tsoglani/Τοπικός δίσκος E/AndroidStudioProjects/AndroidMouse/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
-        <dex dex="/media/tsoglani/Τοπικός δίσκος E/AndroidStudioProjects/AndroidMouse/app/build/intermediates/pre-dexed/debug/classes-3ab51f1040418acd794ca060e0dec661cb5f2c66.jar" />
-    </item>
-    <item
-        jar="/media/tsoglani/Τοπικός δίσκος E/AndroidStudioProjects/AndroidMouse/app/build/intermediates/exploded-aar/co.lemonlabs/expandable-button-menu/1.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
+        jar="/media/tsoglani/tsoglani1/github/remoteDesktop_Free/app/build/intermediates/exploded-aar/co.lemonlabs/expandable-button-menu/1.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
         sha1="71d40ca0d1401c134d7825b308ac1b224ad14474">
-        <dex dex="/media/tsoglani/Τοπικός δίσκος E/AndroidStudioProjects/AndroidMouse/app/build/intermediates/pre-dexed/debug/classes-5469dec6ad4c1a02bf867c80fbb68736a666ea2a.jar" />
+        <dex dex="/media/tsoglani/tsoglani1/github/remoteDesktop_Free/app/build/intermediates/transforms/dex/debug/folders/1000/10/co.lemonlabs-expandable-button-menu-1.0.0_67fb3a88a9cd258674745d1ee89128b3cc3e914f/classes.dex" />
+    </item>
+    <item
+        jar="/media/tsoglani/tsoglani1/github/remoteDesktop_Free/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/media/tsoglani/tsoglani1/github/remoteDesktop_Free/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_d7a8a02da8a4d26ce976c33e3b8fc1aa9c70b5a7/classes.dex" />
+    </item>
+    <item
+        jar="/media/tsoglani/tsoglani1/Android_files/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/media/tsoglani/tsoglani1/github/remoteDesktop_Free/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0_310f0d0bda449baed7b25b9089fa61815df551b7/classes.dex" />
     </item>
     <item
         jar="/home/tsoglani/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
-        jumboMode="false"
-        revision="22.0.0"
+        jumboMode="true"
+        revision="24.0.1"
         sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
-        <dex dex="/media/tsoglani/Τοπικός δίσκος E/AndroidStudioProjects/AndroidMouse/app/build/intermediates/pre-dexed/debug/library-2.4.0-9ddc57ca78bff37a13779ddf28f50ed9fb583648.jar" />
+        <dex dex="/media/tsoglani/tsoglani1/github/remoteDesktop_Free/app/build/intermediates/transforms/dex/debug/folders/1000/10/library-2.4.0_9ddc57ca78bff37a13779ddf28f50ed9fb583648/classes.dex" />
     </item>
     <item
-        jar="/media/tsoglani/Τοπικός δίσκος E/AndroidStudioProjects/AndroidMouse/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="/media/tsoglani/Τοπικός δίσκος E/AndroidStudioProjects/AndroidMouse/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-88093877c7de4bd2be8f3387b52160b57f587a35.jar" />
+        jar="/media/tsoglani/tsoglani1/github/remoteDesktop_Free/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
+        <dex dex="/media/tsoglani/tsoglani1/github/remoteDesktop_Free/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.0.0_ca0f19307674829e0275efa36e066f0e2187763f/classes.dex" />
+    </item>
+    <item
+        jar="/media/tsoglani/tsoglani1/github/remoteDesktop_Free/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/media/tsoglani/tsoglani1/github/remoteDesktop_Free/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_d40ce554c24d990422d2a79e2f0e61944058c2e8/classes.dex" />
+    </item>
+    <item
+        jar="/media/tsoglani/tsoglani1/github/remoteDesktop_Free/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="c9c75f38774a407a8ecc46eacab1d23f19efc189">
+        <dex dex="/media/tsoglani/tsoglani1/github/remoteDesktop_Free/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_c3561a72301b695f4c9577c4408a41d2ec590fd9/classes.dex" />
+    </item>
+    <item
+        jar="/media/tsoglani/tsoglani1/github/remoteDesktop_Free/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
+        <dex dex="/media/tsoglani/tsoglani1/github/remoteDesktop_Free/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.0.0_47aab1c1d66375312ca35e353ddf363e0463dd91/classes.dex" />
+    </item>
+    <item
+        jar="/media/tsoglani/tsoglani1/github/remoteDesktop_Free/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
+        <dex dex="/media/tsoglani/tsoglani1/github/remoteDesktop_Free/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.0.0_2487add90593fd27a87dd42c8cd6390dc74558b9/classes.dex" />
+    </item>
+    <item
+        jar="/media/tsoglani/tsoglani1/github/remoteDesktop_Free/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="c3036b0fdc59c7fc5f75f1012142e45c33f0d451">
+        <dex dex="/media/tsoglani/tsoglani1/github/remoteDesktop_Free/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_580fccb1fda58a49737d87f9f19ba62c711bc95a/classes.dex" />
     </item>
 
 </items>
