@@ -8,7 +8,7 @@ android {
         applicationId "remote.desktop.tsoglanakos.free"
         minSdkVersion 14
         targetSdkVersion 22
-        versionCode 34
+        versionCode 1
         versionName "1"
     }
     buildTypes {
